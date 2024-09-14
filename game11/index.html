@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Add the logo here -->
+        <img src="logo.png" alt="Game Logo" class="logo">
+        
+        <h1>Number Guessing Game</h1>
+        
+        <label for="playerName">Enter your name:</label>
+        <input type="text" id="playerName" placeholder="Your name">
+
+        <div>
+            <label for="difficulty">Choose Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy (1-10)</option>
+                <option value="medium">Medium (1-50)</option>
+                <option value="hard">Hard (1-100)</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="guessInput">Enter your guess:</label>
+            <input type="number" id="guessInput" placeholder="Your guess">
+            <button id="submitGuess">Submit Guess</button>
+        </div>
+
+        <div id="message"></div>
+        <div id="hint"></div>
+        <div id="score"></div>
+
+        <button id="restartGame">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
